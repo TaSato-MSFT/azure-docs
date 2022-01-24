@@ -44,6 +44,7 @@ $pip1 = New-AzPublicIpAddress `
   -Sku "Standard" `
   -Location "centralus" `
   -AllocationMethod Static
+  -Zone 1,2,3
 
 New-AzFirewall `
   -Name "azFw" `
