@@ -295,7 +295,7 @@ The circuit now has the ExpressRoute premium add-on features enabled. We begin b
 
 Before disabling the ExpressRoute premium add-on, understand the following criteria:
 
-* Before you downgrade from premium to standard, you must ensure that the number of virtual networks that are linked to the circuit is less than 10. If you don't, your update request fails, and we bill you at premium rates.
+* Before you downgrade from premium to standard, you must ensure that the number of virtual networks that are linked to the circuit is less than or equal 10. If you don't, your update request fails, and we bill you at premium rates.
 * All virtual networks in other geopolitical regions must be first unlinked. If you don't remove the link, your update request fails and we continue to bill you at premium rates.
 * Your route table must be less than 4,000 routes for private peering. If your route table size is greater than 4,000 routes, the BGP session drops. The BGP session doesn't reestablish until the number of advertised prefixes is under 4,000.
 
